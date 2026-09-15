@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DiditStore | Jual Beli Crypto Indonesia</title>
+<style>
+  :root {
+    --bg: #080b12;
+    --card: #111827;
+    --primary: #f7931a; /* Orange BTC */
+    --accent: #0052ff;  /* Biru Tokocrypto */
+    --green: #22c55e;
+    --red: #ef4444;
+    --text: #f8fafc;
+    --muted: #94a3b8;
+  }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+  body { background: var(--bg); color: var(--text); line-height: 1.6; }
+  
+  header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1rem 5%; background: #080b12ee; backdrop-filter: blur(10px);
+    border-bottom: 1px solid #1f2937; position: sticky; top: 0; z-index: 10;
+  }
+  .logo { font-size: 1.6rem; font-weight: 800; color: var(--primary); }
+  .logo span { color: var(--accent); }
+  nav a { color: var(--text); text-decoration: none; margin-left: 1.2rem; font-weight: 500; }
+  nav a:hover { color: var(--primary); }
+
+  .hero {
+    text-align: center; padding: 5rem 5%;
+    background: radial-gradient(circle at 50% 20%, #0052ff1a, transparent 70%);
+  }
+  .hero h1 { font-size: 2.6rem; margin-bottom: 1rem; }
+  .hero p { color: var(--muted); max-width: 650px; margin: 0 auto 2rem; }
+  .btn {
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    color: #fff; padding: 14px 28px; border-radius: 10px; text-decoration: none;
+    font-weight: bold; border: none; cursor: pointer; transition: 0.3s;
+  }
+  .btn:hover { transform: scale(1.05); }
+
+  .section { padding: 4rem 5%; }
+  .section h2 { text-align: center; font-size: 2rem; margin-bottom: 2rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+
+  .coin {
+    background: var(--card); border: 1px solid #1f2937; border-radius: 12px;
+    padding: 1rem; display: flex; align-items: center; gap: 1rem; transition: 0.3s;
+  }
+  .coin:hover { border-color: var(--primary); transform: translateY(-4px); }
+  .coin img { width: 48px; height: 48px; border-radius: 50%; background: #fff; padding: 3px; }
+  .coin h3 { font-size: 1rem; }
+  .coin .price { font-size: 1.1rem; font-weight: bold; }
+  .up { color: var(--green); } .down { color: var(--red); }
+
+  .trade {
+    background: var(--card); border: 1px solid #1f2937; border-radius: 14px;
+    padding: 2rem; max-width: 500px; margin: 0 auto;
+  }
+  .trade label { display: block; margin: 0.8rem 0 0.3rem; color: var(--muted); }
+  .trade input, .trade select {
+    width: 100%; padding: 12px; border-radius: 8px;
+    border: 1px solid #334155; background: #080b12; color: var(--text);
+  }
+
+  footer {
+    text-align: center; padding: 2rem 5%; border-top: 1px solid #1f2937;
+    color: var(--muted); font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Didit<span>Store</span></div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#market">Market</a>
+    <a href="#trade">Jual Beli</a>
+    <a href="#contact">Kontak</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>Platform Jual Beli Crypto Terpercaya</h1>
+  <p>DiditStore melayani jual beli Bitcoin, Ethereum, dan 100+ aset digital lainnya. Proses cepat, fee rendah, aman.</p>
+  <a href="#trade" class="btn">Mulai Trading</a>
+</section>
+
+<section class="section" id="market">
+  <h2>Harga Market Hari Ini</h2>
+  <div class="grid">
+    <div class="coin">
+      <img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png" alt="BTC">
+      <div>
+        <h3>Bitcoin BTC</h3>
+        <div class="price">$67,420 <span class="up">+2.4%</span></div>
+      </div>
+    </div>
+    <div class="coin">
+      <img src="https://assets.coingecko.com/coins/images/279/large/ethereum.png" alt="ETH">
+      <div>
+        <h3>Ethereum ETH</h3>
+        <div class="price">$3,580 <span class="up">+1.8%</span></div>
+      </div>
+    </div>
+    <div class="coin">
+      <img src="https://assets.coingecko.com/coins/images/4128/large/solana.png" alt="SOL">
+      <div>
+        <h3>Solana SOL</h3>
+        <div class="price">$145 <span class="down">-0.9%</span></div>
+      </div>
+    </div>
+    <div class="coin">
+      <img src="https://assets.coingecko.com/coins/images/825/large/bnb-logo.png" alt="BNB">
+      <div>
+        <h3>BNB</h3>
+        <div class="price">$580 <span class="up">+3.1%</span></div>
+      </div>
+    </div>
+    <div class="coin">
+      <img src="https://assets.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png" alt="XRP">
+      <div>
+        <h3>Ripple XRP</h3>
+        <div class="price">$0.62 <span class="up">+0.5%</span></div>
+      </div>
+    </div>
+    <div class="coin">
+      <img src="https://assets.coingecko.com/coins/images/5/large/dogecoin.png" alt="DOGE">
+      <div>
+        <h3>Dogecoin DOGE</h3>
+        <div class="price">$0.14 <span class="down">-1.2%</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="trade">
+  <h2>Form Jual Beli Crypto</h2>
+  <div class="trade">
+    <label>Pilih Koin</label>
+    <select>
+      <option>Bitcoin BTC</option>
+      <option>Ethereum ETH</option>
+      <option>Solana SOL</option>
+      <option>BNB</option>
+    </select>
+
+    <label>Jumlah IDR</label>
+    <input type="number" placeholder="Contoh: 1000000">
+
+    <label>Tipe</label>
+    <select>
+      <option>Beli</option>
+      <option>Jual</option>
+    </select>
+
+    <button class="btn" style="width:100%; margin-top:1.5rem;">Submit Order</button>
+    <p style="font-size:0.8rem; color:var(--muted); text-align:center; margin-top:1rem;">*Demo UI. Untuk transaksi real butuh integrasi API</p>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Kontak DiditStore</h2>
+  <div class="trade" style="text-align:center;">
+    <p>CS siap bantu 24 jam</p>
+    <a href="https://wa.me/628123456789" class="btn" style="margin-top:1rem;">WhatsApp CS</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 DiditStore. Jual Beli Aset Crypto.<br>Bukan saran finansial. Investasi crypto berisiko. DYOR</p>
+</footer>
+
+</body>
+</html>
